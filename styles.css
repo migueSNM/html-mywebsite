@@ -1,12 +1,14 @@
 body {
-    background: rgb(58, 58, 58);
+    background: black;
     color: white;
     font-family: Arial, Helvetica, sans-serif, Helvetica Neue;
     margin: 0;
     padding: 0;
+    margin-top: 20px;
 }
 header {
     background: rgb(32, 32, 32);
+    opacity: 0.7;
 }
 .sticky {
     position: fixed;
@@ -19,7 +21,12 @@ section {
     color: grey;
     padding: 20px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home {
+    background: black;
 }
 
 .locations {
@@ -31,9 +38,34 @@ section {
 }
 
 div {
-    background: blue;
-    margin: auto;
+    margin: 5px;
     width: 100px;
+    text-align: center;
+}
+
+.limited-time {
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+
+}
+
+.product-title {
+    width: 600px;
+    font-weight: bolder;
+    font-size: 100px;
+    color: white;
+}
+
+.product-description {
+    width: 500px;
+    font-size: 50px;
+    color: white;
+}
+
+.iphones-image {
+    display: block;
+    width: 500px;
 }
 
 ul {
