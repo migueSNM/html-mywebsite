@@ -9,6 +9,7 @@ body {
 header {
     background: rgb(32, 32, 32);
     opacity: 0.7;
+    height: 44px;
 }
 .sticky {
     position: fixed;
@@ -30,11 +31,11 @@ section {
 }
 
 .locations {
-    background: red;
+    background: black;
 }
 
 .contact {
-    background: yellow;
+    background: black;
 }
 
 div {
@@ -50,12 +51,24 @@ div {
 
 }
 
-.product-title {
-    width: 600px;
-    font-weight: bolder;
-    font-size: 100px;
-    color: white;
+@media screen and (min-width: 601px) {
+    .product-title {
+        width: 600px;
+        font-weight: bolder;
+        font-size: 100px;
+        color: white;
+    }
 }
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+    .product-title {
+        width: 600px;
+        font-weight: bolder;
+        font-size: 10px;
+        color: white;
+    }
+  }
 
 .product-description {
     width: 500px;
@@ -66,6 +79,21 @@ div {
 .iphones-image {
     display: block;
     width: 500px;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    justify-content: center;
+}
+
+.who-we-are, .who-we-are div {
+    width: 400px;
+}
+
+.what-we-do, .what-we-do div {
+    width: 400px;
 }
 
 ul {
@@ -91,15 +119,13 @@ li:first-child {
 a {
     text-decoration: none;
     color: white;
-}
-
-a:active {
-    font-weight: bold;
+    transition: border-bottom 0.25s;
+    transition: color 0.25s;
 }
 
 a:hover {
     color: rgba(202, 199, 199, 0.644);
-
+    border-bottom: 2px solid rgba(202, 199, 199, 0.644);
 }
 
 footer {
