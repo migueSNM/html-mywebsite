@@ -1,73 +1,99 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>My Page!</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <script src= 
-        "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
-    </script> 
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-        $(function(){
-            $("#header").load("navbar.html"); 
-        });
+      $(function() {
+        $("#header").load("navbar.html");
+      });
     </script>
-</head>
-<body>
-<header id="header" class="sticky">
-</header>
-<section class="contact">
-    <h1>Contact</h1>
-    <div><form class="gform pure-form pure-form-stacked" method="POST" data-email="miguelmchirinos@gmail.com"
-        action="https://script.google.com/macros/s/AKfycbz0ba87JSeL1p1YhdFvMlQxlddZMdLRiQVAz1e-A4ojfd_cxSs/exec">
+  </head>
+  <body>
+    <header id="header" class="sticky"></header>
+    <section class="contact">
+      <h1>Contact</h1>
+      <div>
+        <form
+          class="gform pure-form pure-form-stacked"
+          method="POST"
+          data-email="miguelmchirinos@gmail.com"
+          action="https://script.google.com/macros/s/AKfycbz0ba87JSeL1p1YhdFvMlQxlddZMdLRiQVAz1e-A4ojfd_cxSs/exec"
+        >
           <!-- change the form action to your script url -->
-      
+
           <div class="form-elements">
             <fieldset class="pure-group">
               <label for="name">Name: </label>
-              <input id="name" name="name" placeholder="What your Mom calls you" />
+              <input
+                id="name"
+                name="name"
+                placeholder="What your Mom calls you"
+              />
             </fieldset>
-      
+
             <fieldset class="pure-group">
               <label for="message">Message: </label>
-              <textarea id="message" name="message" rows="10"
-              placeholder="Tell us what's on your mind..."></textarea>
+              <textarea
+                id="message"
+                name="message"
+                rows="10"
+                placeholder="Tell us what's on your mind..."
+              ></textarea>
             </fieldset>
-      
+
             <fieldset class="pure-group">
               <label for="email"><em>Your</em> Email Address:</label>
-              <input id="email" name="email" type="email" value=""
-              required placeholder="your.name@email.com"/>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                value=""
+                required
+                placeholder="your.name@email.com"
+              />
               <span class="email-invalid" style="display:none">
-                Must be a valid email address</span>
+                Must be a valid email address</span
+              >
             </fieldset>
-      
+
             <fieldset class="pure-group">
               <label for="color">Favourite Color: </label>
               <input id="color" name="color" placeholder="green" />
             </fieldset>
-      
-            <button class="button-success pure-button button-xlarge">
-              <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
-          </div>
-      
-          <!-- Customise the Thankyou Message People See when they submit the form: -->
-          <div class="thankyou_message" style="display:none;">
-            <h2><em>Thanks</em> for contacting us!
-              We will get back to you soon!</h2>
-          </div>
-      
-        </form>
-    <!-- Submit the Form to Google Using "AJAX" -->
-  <script data-cfasync="false" type="text/javascript"
-  src="form-submission-handler.js"></script>
 
-    </div>
-    <div>b</div>
-    <div>c</div>
-</section>
-<section>lower-section</section>
-<footer>footer</footer>
-    
-</body>
+            <button class="button-success pure-button button-xlarge">
+              <i class="fa fa-paper-plane"></i>&nbsp;Send
+            </button>
+          </div>
+
+          <!--
+            Customise the Thankyou Message People See when they submit the form:
+          -->
+          <div class="thankyou_message" style="display:none;">
+            <h2>
+              <em>Thanks</em> for contacting us! We will get back to you soon!
+            </h2>
+          </div>
+        </form>
+        <!-- Submit the Form to Google Using "AJAX" -->
+        <script
+          data-cfasync="false"
+          type="text/javascript"
+          src="form-submission-handler.js"
+        ></script>
+      </div>
+      <div>b</div>
+      <div>c</div>
+    </section>
+    <section>lower-section</section>
+    <footer>footer</footer>
+  </body>
 </html>

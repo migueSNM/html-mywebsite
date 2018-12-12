@@ -1,136 +1,137 @@
 body {
-    background: black;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif, Helvetica Neue;
-    margin: 0;
-    padding: 0;
-    margin-top: 20px;
+  background: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif, Helvetica Neue;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
 }
 header {
-    /*background: rgb(32, 32, 32);*/
-    background-image: url("images/header-background.jpg");
-    opacity: 1;
-    height: 300px;
+  /*background: rgb(32, 32, 32);*/
+  background-image: url("images/header-background.jpg");
+  opacity: 1;
+  height: 40px;
 }
 
 .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
 }
 
 li {
-    color: white;
-    padding: 10px;
-    border-radius: 2px;
-    margin-left: 20px;
-    text-decoration: none;
+  color: white;
+  padding: 10px;
+  border-radius: 2px;
+  margin-left: 20px;
+  text-decoration: none;
 }
 
 li:first-child {
-    margin-left: 2px;
+  margin-left: 2px;
 }
 
 section {
-    background: white;
-    color: grey;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background: white;
+  color: grey;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .home {
-    background: black;
+  background: black;
 }
 
-.locations {
-    background: black;
+.program {
+  background: black;
 }
 
 .contact {
-    background: black;
+  background: black;
 }
 
 div {
-    margin: 5px;
-    width: 100px;
-    text-align: center;
+  margin: 5px;
+  width: 100px;
+  text-align: center;
 }
 
 .limited-time {
-    border-radius: 2px;
-    border-style: solid;
-    border-width: 1px;
-
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 1px;
 }
 
 @media screen and (min-width: 601px) {
-    .product-title {
-        width: 600px;
-        font-weight: bolder;
-        font-size: 100px;
-        color: white;
-    }
+  .product-title {
+    width: 600px;
+    font-weight: bolder;
+    font-size: 100px;
+    color: white;
+  }
 }
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
-    .product-title {
-        width: 600px;
-        font-weight: bolder;
-        font-size: 10px;
-        color: white;
-    }
+  .product-title {
+    width: 600px;
+    font-weight: bolder;
+    font-size: 10px;
+    color: white;
   }
+}
 
 .product-description {
-    width: 500px;
-    font-size: 50px;
-    color: white;
+  width: 500px;
+  font-size: 50px;
+  color: white;
 }
 
 .iphones-image {
-    display: block;
-    width: 500px;
+  display: block;
+  width: 500px;
 }
 
 .about-us {
-    display: flex;
-    flex-direction: row;
-    width: 800px;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+  justify-content: center;
 }
 
-.who-we-are, .who-we-are div {
-    width: 400px;
+.who-we-are,
+.who-we-are div {
+  width: 400px;
 }
 
-.what-we-do, .what-we-do div {
-    width: 400px;
+.what-we-do,
+.what-we-do div {
+  width: 400px;
 }
 
 a {
-    text-decoration: none;
-    color: white;
-    transition: border-bottom 0.25s;
-    transition: color 0.25s;
+  text-decoration: none;
+  color: white;
+  transition: border-bottom 0.25s;
+  transition: color 0.25s;
 }
 
 a:hover {
-    color: rgba(202, 199, 199, 0.644);
-    border-bottom: 2px solid rgba(202, 199, 199, 0.644);
+  color: rgba(202, 199, 199, 0.644);
+  border-bottom: 2px solid rgba(202, 199, 199, 0.644);
 }
 
 footer {
-    background: black;
-    padding: 10px 20px;
+  background: black;
+  padding: 10px 20px;
 }
