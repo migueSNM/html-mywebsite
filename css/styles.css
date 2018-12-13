@@ -25,11 +25,19 @@ section {
   color: rgb(110, 190, 110);
   display: flex;
   flex-direction: row;
+  align-items: stretch;
+}
+
+.home-summercamp div:not(#summercamp-descriptions) {
+  background: green;
+  flex-grow: 1;
+  border-style: solid;
+  border-color: white;
+  border-width: 5px;
 }
 
 .home-summercamp-descriptions {
-  display: flex;
-  flex-direction: column;
+  flex-grow: 2;
 }
 
 .program {
