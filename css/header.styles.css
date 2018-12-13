@@ -3,11 +3,10 @@ body {
 }
 
 header {
-  /*background: rgb(32, 32, 32);*/
   background-image: url("../images/2HeroShot.jpg");
-  background-size: 100%;
+  background-size: cover;
   opacity: 1;
-  height: 500px;
+  height: 450px;
 }
 
 .sticky {
@@ -21,20 +20,12 @@ header {
   justify-content: space-between;
 }
 
-.logo-image {
+img {
   padding-left: 20px;
   padding-top: 20px;
-}
+  width: 100%;
+  height: auto;
 
-.header-text {
-  display: flex;
-  justify-content: flex-end;
-  align-items: stretch;
-  font-weight: bold;
-}
-
-.slogan {
-  width: 50%;
 }
 
 ul {
@@ -44,11 +35,12 @@ ul {
   list-style-type: none;
   display: flex;
   justify-content: flex-end;
+  white-space: nowrap;
+  font-size: 10px;
 }
 
 li {
   color: black;
-  padding: 10px;
   border-radius: 2px;
   margin-left: 20px;
   text-decoration: none;
@@ -68,4 +60,24 @@ a {
 a:hover {
   color: rgba(202, 199, 199, 0.644);
   border-bottom: 2px solid rgba(202, 199, 199, 0.644);
+}
+
+.header-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+}
+
+.header-text div:not(#slogan) {
+  flex-grow: 2;
+}
+
+.slogan {
+  flex-grow: 1;
+  width: 10%;
+  padding-right: 10px;
+  padding-bottom: 75px;
+  font-size: 4vw;
+  font-weight: bold;
 }
