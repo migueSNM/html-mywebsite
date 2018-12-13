@@ -5,8 +5,8 @@
     href="https://fonts.googleapis.com/css?family=Raleway"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="/header.styles.css" />
-  <link rel="stylesheet" href="/program/signup/signupstyles.css" />
+  <link rel="stylesheet" href="css/header.styles.css" />
+  <link rel="stylesheet" href="css/signupstyles.css" />
   <!-- header -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>

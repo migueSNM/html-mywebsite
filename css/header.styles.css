@@ -4,7 +4,7 @@ body {
 
 header {
   /*background: rgb(32, 32, 32);*/
-  background-image: url("images/2HeroShot.jpg");
+  background-image: url("../images/2HeroShot.jpg");
   background-size: 100%;
   opacity: 1;
   height: 500px;

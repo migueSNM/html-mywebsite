@@ -5,8 +5,8 @@
     href="https://fonts.googleapis.com/css?family=Raleway"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="../../header.styles.css" />
-  <link rel="stylesheet" href="signupstyles.css" />
+  <link rel="stylesheet" href="css/header.styles.css" />
+  <link rel="stylesheet" href="css/signupstyles.css" />
   <!-- header -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
@@ -17,7 +17,7 @@
 
   <body>
     <header id="header"><!-- agregar class="sticky" --></header>
-    <form id="regForm" action="signup.php" target="_blank" method="POST">
+    <form id="regForm" action="php/signup.php" target="_blank" method="POST">
       <h1>Register:</h1>
       <!-- One "tab" for each step in the form: -->
       <div class="tab">
@@ -29,7 +29,7 @@
             name="name"
           />
         </p>
-        
+
         Gender:
         <p>
           <select name="gender">
@@ -68,9 +68,8 @@
             name="emergencyrelationship"
           />
         </p>
-        
       </div>
-      
+
       <div class="tab">
         Choose the level:
         <p>
@@ -101,15 +100,15 @@
         </p>
       </div>
       <div class="tab">
-          Where do you need transportation from?
-          <p>
-            <select name="city">
-              <option value="city-default">City...</option>
-              <option value="city-manhattan">Manhattan</option>
-              <option value="city-newjersey">New Jersey</option>
-            </select>
-          </p>
-          Streets:
+        Where do you need transportation from?
+        <p>
+          <select name="city">
+            <option value="city-default">City...</option>
+            <option value="city-manhattan">Manhattan</option>
+            <option value="city-newjersey">New Jersey</option>
+          </select>
+        </p>
+        Streets:
         <p>
           <select name="streets">
             <option value="streets-default">Choose streets...</option>
@@ -136,7 +135,7 @@
           />
         </p>
       </div>
-      
+
       <div style="overflow:auto;">
         <div style="float:right;">
           <button type="button" id="prevBtn" onclick="nextPrev(-1)">
