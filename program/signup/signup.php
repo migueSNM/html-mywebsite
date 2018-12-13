@@ -1,13 +1,13 @@
 <?php
 
-echo $_POST;
 // Check if the form is submitted
-if ( isset( $_POST['submit'] ) ) {
+if ( !empty( $_POST ) ) {
 
     // retrieve the form data by using the element's name attributes value as key
 
     echo '<h2>form data retrieved by using the $_REQUEST variable<h2/>';
 
+    //TODO save all the other data
     $firstname = $_REQUEST['name'];
 
     // display the results
