@@ -5,19 +5,19 @@
     href="https://fonts.googleapis.com/css?family=Raleway"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="../../header.styles.css" />
-  <link rel="stylesheet" href="signupstyles.css" />
+  <link rel="stylesheet" href="/header.styles.css" />
+  <link rel="stylesheet" href="/program/signup/signupstyles.css" />
   <!-- header -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
     $(function() {
-      $("#header").load("../../navbar.html");
+      $("#header").load("/navbar.html");
     });
   </script>
 
   <body>
     <header id="header"><!-- agregar class="sticky" --></header>
-    <form id="regForm" action="signup.php" target="_blank" method="POST">
+    <form id="regForm" action="/action_page.php">
       <h1>Register:</h1>
       <!-- One "tab" for each step in the form: -->
       <div class="tab">
@@ -31,7 +31,7 @@
         </p>
         Gender:
         <p>
-          <select name="gender">
+          <select>
             <option value="male">Male</option>
             <option value="female">Female</option>
           </select>
@@ -41,82 +41,75 @@
         Emergency contact:
         <p>
           <input
-            placeholder="Emergency contact name..."
+            placeholder="Child name..."
             oninput="this.className = ''"
-            name="emergencyname"
+            name="name"
           />
         </p>
+        Emergency contact name :
         <p>
           <input
-            placeholder="Emergency contact phone..."
+            placeholder="Child name..."
             oninput="this.className = ''"
-            name="emergencyphone"
+            name="name"
           />
         </p>
+        Emergency contact phone:
         <p>
           <input
-            placeholder="Emergency contact email..."
+            placeholder="Child name..."
             oninput="this.className = ''"
-            name="emergencyemail"
+            name="name"
           />
         </p>
+        Emergency contact email:
         <p>
           <input
-            placeholder="Relationship to student..."
+            placeholder="Child name..."
             oninput="this.className = ''"
-            name="emergencyrelationship"
+            name="name"
+          />
+        </p>
+        Relationship to student:
+        <p>
+          <input
+            placeholder="Child name..."
+            oninput="this.className = ''"
+            name="name"
           />
         </p>
       </div>
       <div class="tab">
-        Choose the level:
+        Contact Info:
         <p>
-          <select name="level">
-            <option value="level-default">Choose level...</option>
-            <option value="level-1">Level 1</option>
-            <option value="level-2">Level 2</option>
-            <option value="level-3">Level 3</option>
-          </select>
+          <input
+            placeholder="E-mail..."
+            oninput="this.className = ''"
+            name="email"
+          />
         </p>
-        Choose the dates and times:
         <p>
-          <select name="dates">
-            <option value="dates-default">Choose dates and times...</option>
-            <option value="dates-1">Dates 1</option>
-            <option value="dates-2">Dates 2</option>
-            <option value="dates-3">Dates 3</option>
-          </select>
-        </p>
-        Choose your package:
-        <p>
-          <select name="package">
-            <option value="package-default">Choose package...</option>
-            <option value="package-seasonal">Seasonal</option>
-            <option value="package-half-seasonal">Half Seasonal</option>
-            <option value="package-monthly">Monthly</option>
-          </select>
+          <input
+            placeholder="Phone..."
+            oninput="this.className = ''"
+            name="phone"
+          />
         </p>
       </div>
       <div class="tab">
-          Where do you need transportation from?
-          <p>
-            <select name="city">
-              <option value="city-default">City...</option>
-              <option value="city-manhattan">Manhattan</option>
-              <option value="city-newjersey">New Jersey</option>
-            </select>
-          </p>
-          Streets:
+        Birthday:
         <p>
-          <select name="streets">
-            <option value="streets-default">Choose streets...</option>
-            <option value="streets-1">87&3</option>
-            <option value="streets-2">96&broadway</option>
-          </select>
+          <input placeholder="dd" oninput="this.className = ''" name="dd" />
+        </p>
+        <p>
+          <input placeholder="mm" oninput="this.className = ''" name="nn" />
+        </p>
+        <p>
+          <input placeholder="yyyy" oninput="this.className = ''" name="yyyy" />
         </p>
       </div>
       <div class="tab">
-        Detalle:
+        Login Info:
         <p>
           <input
             placeholder="Username..."

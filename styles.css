@@ -39,6 +39,18 @@ li:first-child {
   margin-left: 2px;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+  transition: border-bottom 0.25s;
+  transition: color 0.25s;
+}
+
+a:hover {
+  color: rgba(202, 199, 199, 0.644);
+  border-bottom: 2px solid rgba(202, 199, 199, 0.644);
+}
+
 section {
   background: white;
   color: grey;
@@ -117,18 +129,6 @@ div {
 .what-we-do,
 .what-we-do div {
   width: 400px;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-  transition: border-bottom 0.25s;
-  transition: color 0.25s;
-}
-
-a:hover {
-  color: rgba(202, 199, 199, 0.644);
-  border-bottom: 2px solid rgba(202, 199, 199, 0.644);
 }
 
 footer {
