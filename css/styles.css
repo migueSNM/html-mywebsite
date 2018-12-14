@@ -67,6 +67,16 @@ section {
   }
 }
 
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .product-title {
+    width: 600px;
+    font-weight: bolder;
+    font-size: 10px;
+    color: white;
+  }
+}
+
 .services {
   width: 100%;
   display: flex;
@@ -79,16 +89,6 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-}
-
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 600px) {
-  .product-title {
-    width: 600px;
-    font-weight: bolder;
-    font-size: 10px;
-    color: white;
-  }
 }
 
 .product-description {
