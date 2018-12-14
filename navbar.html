@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link
     rel="stylesheet"
     href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
@@ -8,23 +9,18 @@
   />
 </head>
 <div class="navbar-logo">
-  <span class="logo-image"> <a href="index.html">
-      <img src="images/1Logo.png" alt="logo"/>
-  </a>
-    </span>
-  <span>
-    <nav>
-      <ul>
-        <li><a href="aboutus.html">ABOUT US</a></li>
-        <li><a href="aboutus.html">LEAD PROS</a></li>
-        <li><a href="aboutus.html">PRICING</a></li>
-        <li><a href="aboutus.html">TEAM PROFILE</a></li>
-        <li><a href="aboutus.html">TRAINING FACILIES</a></li>
-        <li><a href="aboutus.html">TOURNAMENT</a></li>
-        <li><a href="aboutus.html">CONTACT</a></li>
-      </ul>
-    </nav>
+  <span class="logo-image">
+    <a href="index.html"> <img src="images/1Logo.png" alt="logo" /> </a>
   </span>
+  <div class="topnav" id="myTopNav">
+    <a href="aboutus.html">ABOUT US</a> <a href="aboutus.html">LEAD PROS</a>
+    <a href="aboutus.html">PRICING</a> <a href="aboutus.html">TEAM PROFILE</a>
+    <a href="aboutus.html">TRAINING FACILIES</a>
+    <a href="aboutus.html">TOURNAMENT</a> <a href="aboutus.html">CONTACT</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
 </div>
 <div class="header-text">
   <div></div>
@@ -32,3 +28,15 @@
     HIGH QUALITY TENNIS LESSONS FOR KIDS IN THE NYC AND NEW JERSEY AREA
   </div>
 </div>
+
+<script>
+  /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
